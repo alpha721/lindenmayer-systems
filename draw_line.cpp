@@ -63,14 +63,19 @@ void display(void)
 
  void draw_line (float ax, float ay, float bx, float by)  //ax,ay =minitial point, bx,by = final point
   {  
+  //to know slope of line
   int dx = abs (bx - ax);  
   int dy = abs (by - ay);  
   int x, y;  
+  
+  //slope<1 line below
   if (dx >= dy)  
   {  
+   //updating factor to check position of next mid point wrt line
    int d = 2*dy-dx;  
    int ds = 2*dy;  
    int dt = 2*(dy-dx);  
+   //check if it has reached till final x limit
        if (ax < bx)   
        {  
             x = ax;  
@@ -83,13 +88,18 @@ void display(void)
              bx = ax;  
              by = ay;  
         }  
-       plot(x, y);  
+        //plot function to mark pixel
+       plot(x, y);
+         
+       //loop to run till final x
    while (x < bx)  
    {  
         if (d < 0)  
        d += ds;  
        else {  
-             if (y < by) {  
+       //check it if has reached till final y limit or not
+             if (y < by) 
+             {  
              y++;  
               d += dt;  
              }   
@@ -99,13 +109,16 @@ void display(void)
             }  
            }  
   x++;  
+  //plot function to mark pixel
        plot(x, y);  
       }  
       }  
+      // slope > 1 line below
       else {   
             int d = 2*dx-dy;  
             int ds = 2*dx;  
             int dt = 2*(dx-dy);  
+            //to check if reached till final y limit or not
             if (ay < by) {  
             x = ax;  
             y = ay;  
@@ -116,7 +129,9 @@ void display(void)
              by = ay;  
              bx = ax;  
             }  
-            plot(x, y);   
+            //plot function to mark pixel
+            plot(x, y);
+            //loop to run till final y
         while (y < by)  
         {  
               if (d < 0)  
@@ -131,6 +146,7 @@ void display(void)
                    }  
              }  
              y++;  
+             //plot function to mark pixel
               plot(x, y);  
         }  
        }  
