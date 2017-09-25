@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Lindenmeyer System</title>
+    <link rel="stylesheet" href="assets/stylesheets/main.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:100,300,400">
+  </head>
+
+  <body>
+
+    <!-- Header -->
+ <header class="primary-header container group">
+
+      <h1 class="logo">
+        <a href="index.html">IS F311 <br> Computer Graphics </a>
+      </h1>
+
+      <h3 class="tagline">BITS PILANI Hyderabad Campus</h3>
+
+      <nav class="nav primary-nav">
+      <a href="https://github.com/alpha721/lindenmayer-systems">Github Link</a>
+       </nav>
+
+    </header>
+    <!-- Lead -->
+
+    <section class="row-alt">
+      <div class="lead container">
+
+        <h1>Lindenmeyer system</h1>
+
+        <p>An L-system consists of an alphabet of symbols that can be used to make strings, a collection of production rules that expand each symbol into some larger string of symbols, an initial "axiom" string from which to begin construction, and a mechanism for translating the generated strings into geometric structures.</p>
+
+      </div>
+    </section>
+
+    <!-- Main content -->
+
+    <section class="row">
+      <div class="grid">
+
+        <!-- Chicago Theatre -->
+
+        <section class="venue-theatre">
+
+          <div class="col-1-3">
+            <h2>First lsystem</h2>
+              <p>start: F <br>
+                Rule: F -> F[+F]F[-F][F]<br>
+                iterations: 5 <br>
+                start angle: 20<br></p>
+          
+          </div><!--
+
+          --><iframe class="venue-map col-2-3" src="Screenshot from 2017-09-25 23-05-07.png"></iframe>
+
+        </section>
+
+        <!-- Hotel Chicago -->
+
+        <section class="venue-hotel">
+
+          <div class="col-1-3">
+            <h2>Second lsystem</h2>
+            <p>start: X <br>
+                Rule: <br>
+                X -> F[+X][-X]FX <br> 
+                F -> F[+F]F[-F]F<br>
+                iterations: 7 <br>
+                start angle: 25.7<br></p>
+          </div><!--
+
+          --><iframe class="venue-map col-2-3" src="Screenshot from 2017-09-25 23-35-35.png"></iframe>
+
+        </section>
+
+         <section class="venue-hotel">
+
+          <div class="col-1-3">
+            <h2>Third lsystem</h2>
+            <p>start: F <br>
+                Rule: F -> FF-[-F+F+F]+[+F-F-F]<br>
+                iterations: 4 <br>
+                start angle: 22.5<br></p>
+          
+          </div><!--
+
+          --><iframe class="venue-map col-2-3" src="second.png"></iframe>
+
+        </section>
+
+        <section class="venue-hotel">
+
+          <div class="col-1-3">
+            <h2>Fourth lsystem</h2>
+              <p>start: F <br>
+                Rule: F -> F[+F]F[-F]F<br>
+                iterations: 5 <br>
+                start angle: 25.7<br></p>
+          
+          </div><!--
+
+          --><iframe class="venue-map col-2-3" src="third.png"></iframe>
+
+        </section>
+
+
+
+      </div>
+    </section>
+
+    <!-- Footer -->
+
+    <footer class="primary-footer container group">
+
+      <small>IS F311 computer graphics </small>
+
+      
+    </footer>
+  </body>
+</html>
