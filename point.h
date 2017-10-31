@@ -1,6 +1,16 @@
 #include<iostream>
 using namespace std;
 
+/**
+ * @file point.h
+ * @author Neetu
+ *
+ * DESCRIPTION
+ *
+ * This is a header file which defines the point class.
+ * Point class defines the functions which are used to generate 2-d points on a coordinate plane
+ */
+
 class point{
 	double x;
 	double y;
@@ -26,21 +36,35 @@ class point{
 //	point* create_point(double x,double y);
 };
 
+/** @brief Sets the x-coordinate 
+ *  @param value is intialized double variable
+ *  @return void
+ */
 void point::set_x(double value)
 {
 	this->x = value;
 }
 
+/** @brief Sets the y-coordinate 
+ *  @param value is intialized double variable
+ *  @return void
+ */
 void point::set_y(double value)
 {
 	this->y = value;
 }
 
+/** @brief Returns the x-coordinate 
+ *  @return double
+ */
 double point::get_x()
 {
 	return this->x;
 }
 
+/** @brief Returns the y-coordinate 
+ *  @return double
+ */
 double point::get_y()
 {
 	return this->y;

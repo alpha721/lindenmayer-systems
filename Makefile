@@ -11,3 +11,4 @@ lsystem.o : lsystem.h lsystem.cpp point.h
 	    $(CC) $(CFLAGS) lsystem.cpp
 tar:
 	    tar cfv lsystem.tar lsystem.h lsystem.cpp point.h 
+

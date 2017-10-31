@@ -37,6 +37,8 @@ To run the lsystem code:
    
     ./lsystem
 
+#Midpoint line drawing algorithm
+
 To run the draw_line code:
   
   -type in the command line:
@@ -46,6 +48,8 @@ To run the draw_line code:
   - to run:
   
     ./line
+
+#Midpoint circle drawing algorithm
     
 To run the draw_circle code:
 

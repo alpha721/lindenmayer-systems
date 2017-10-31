@@ -1,0 +1,120 @@
+\hypertarget{draw__line_8cpp}{}\section{draw\+\_\+line.\+cpp File Reference}
+\label{draw__line_8cpp}\index{draw\+\_\+line.\+cpp@{draw\+\_\+line.\+cpp}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+{\ttfamily \#include $<$G\+L/glut.\+h$>$}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{draw__line_8cpp_a2858154e2009b0e6e616f313177762bc}\label{draw__line_8cpp_a2858154e2009b0e6e616f313177762bc}} 
+void {\bfseries init} (void)
+\item 
+\mbox{\Hypertarget{draw__line_8cpp_aa9374430495f628f2b53a29747717129}\label{draw__line_8cpp_aa9374430495f628f2b53a29747717129}} 
+void {\bfseries plot} (int x, int y)
+\item 
+int \hyperlink{draw__line_8cpp_ac1e6bff0f849e0075a8a6d68a99541b8}{get\+\_\+octant} ()
+\begin{DoxyCompactList}\small\item\em gets the octant in which the line lies based on the coordinates provided \end{DoxyCompactList}\item 
+void \hyperlink{draw__line_8cpp_a36b35b9c96d8a059ccbefd3514c67bda}{output} (int octant, int x, int y)
+\begin{DoxyCompactList}\small\item\em plots the coordinates according to the octant in which they lie  octant is initialized integer variable x is intialized integer variable y is initialized integer variable \end{DoxyCompactList}\item 
+void \hyperlink{draw__line_8cpp_a416c8e5143e36ab2b082b9dd80bfb764}{draw\+\_\+line} (void)
+\begin{DoxyCompactList}\small\item\em the mid-\/point line drawing algorithm \end{DoxyCompactList}\item 
+int \hyperlink{draw__line_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}{main} (int argc, char $\ast$$\ast$argv)
+\begin{DoxyCompactList}\small\item\em main function \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+float \hyperlink{draw__line_8cpp_a6331a4150a3705ca74fd6522fbf8beb9}{X1}
+\item 
+\mbox{\Hypertarget{draw__line_8cpp_a19314052eb90a4dc77cbf62fe5d3969f}\label{draw__line_8cpp_a19314052eb90a4dc77cbf62fe5d3969f}} 
+float {\bfseries Y1}
+\item 
+\mbox{\Hypertarget{draw__line_8cpp_aa99b44bf535361c2e4c419904ff0a8db}\label{draw__line_8cpp_aa99b44bf535361c2e4c419904ff0a8db}} 
+float {\bfseries X2}
+\item 
+\mbox{\Hypertarget{draw__line_8cpp_a173bcce6d466d1406d1a4e957e971ff3}\label{draw__line_8cpp_a173bcce6d466d1406d1a4e957e971ff3}} 
+float {\bfseries Y2}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Neetu
+\end{DoxyAuthor}
+D\+E\+S\+C\+R\+I\+P\+T\+I\+ON
+
+This file defines the midpoint line drawing algorithm It takes in input of the coordinates from the command line and draws the line 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{draw__line_8cpp_a416c8e5143e36ab2b082b9dd80bfb764}\label{draw__line_8cpp_a416c8e5143e36ab2b082b9dd80bfb764}} 
+\index{draw\+\_\+line.\+cpp@{draw\+\_\+line.\+cpp}!draw\+\_\+line@{draw\+\_\+line}}
+\index{draw\+\_\+line@{draw\+\_\+line}!draw\+\_\+line.\+cpp@{draw\+\_\+line.\+cpp}}
+\subsubsection{\texorpdfstring{draw\+\_\+line()}{draw\_line()}}
+{\footnotesize\ttfamily void draw\+\_\+line (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+the mid-\/point line drawing algorithm 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+Both initial and final point are same
+
+The line is parallel to Y -\/ axis
+
+The line is parallel to X-\/ axis
+
+adjust the coordinates for the line to lie in the correct octant
+
+adjust the final and initial points
+
+Mid-\/point line drawing algorithm \mbox{\Hypertarget{draw__line_8cpp_ac1e6bff0f849e0075a8a6d68a99541b8}\label{draw__line_8cpp_ac1e6bff0f849e0075a8a6d68a99541b8}} 
+\index{draw\+\_\+line.\+cpp@{draw\+\_\+line.\+cpp}!get\+\_\+octant@{get\+\_\+octant}}
+\index{get\+\_\+octant@{get\+\_\+octant}!draw\+\_\+line.\+cpp@{draw\+\_\+line.\+cpp}}
+\subsubsection{\texorpdfstring{get\+\_\+octant()}{get\_octant()}}
+{\footnotesize\ttfamily int get\+\_\+octant (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+gets the octant in which the line lies based on the coordinates provided 
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{draw__line_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}\label{draw__line_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}} 
+\index{draw\+\_\+line.\+cpp@{draw\+\_\+line.\+cpp}!main@{main}}
+\index{main@{main}!draw\+\_\+line.\+cpp@{draw\+\_\+line.\+cpp}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$$\ast$}]{argv }\end{DoxyParamCaption})}
+
+
+
+main function 
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{draw__line_8cpp_a36b35b9c96d8a059ccbefd3514c67bda}\label{draw__line_8cpp_a36b35b9c96d8a059ccbefd3514c67bda}} 
+\index{draw\+\_\+line.\+cpp@{draw\+\_\+line.\+cpp}!output@{output}}
+\index{output@{output}!draw\+\_\+line.\+cpp@{draw\+\_\+line.\+cpp}}
+\subsubsection{\texorpdfstring{output()}{output()}}
+{\footnotesize\ttfamily void output (\begin{DoxyParamCaption}\item[{int}]{octant,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+plots the coordinates according to the octant in which they lie  octant is initialized integer variable x is intialized integer variable y is initialized integer variable 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{draw__line_8cpp_a6331a4150a3705ca74fd6522fbf8beb9}\label{draw__line_8cpp_a6331a4150a3705ca74fd6522fbf8beb9}} 
+\index{draw\+\_\+line.\+cpp@{draw\+\_\+line.\+cpp}!X1@{X1}}
+\index{X1@{X1}!draw\+\_\+line.\+cpp@{draw\+\_\+line.\+cpp}}
+\subsubsection{\texorpdfstring{X1}{X1}}
+{\footnotesize\ttfamily float X1}
+
+the coordinates of the end point of the line 

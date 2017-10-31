@@ -1,0 +1,87 @@
+\hypertarget{draw__circle_8cpp}{}\section{draw\+\_\+circle.\+cpp File Reference}
+\label{draw__circle_8cpp}\index{draw\+\_\+circle.\+cpp@{draw\+\_\+circle.\+cpp}}
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$G\+L/glut.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{draw__circle_8cpp_aa9374430495f628f2b53a29747717129}\label{draw__circle_8cpp_aa9374430495f628f2b53a29747717129}} 
+void {\bfseries plot} (int x, int y)
+\item 
+void \hyperlink{draw__circle_8cpp_a2858154e2009b0e6e616f313177762bc}{init} (void)
+\item 
+void \hyperlink{draw__circle_8cpp_a48f7c4e548fbfcc8159af260fff4cc26}{draw\+\_\+circle} ()
+\begin{DoxyCompactList}\small\item\em mid-\/point circle drawing algorithm \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{draw__circle_8cpp_a4ea013001a5fb47853d0fab8f8de35cd}\label{draw__circle_8cpp_a4ea013001a5fb47853d0fab8f8de35cd}} 
+void {\bfseries display} (void)
+\item 
+\mbox{\Hypertarget{draw__circle_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}\label{draw__circle_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}} 
+int {\bfseries main} (int argc, char $\ast$$\ast$argv)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{draw__circle_8cpp_a16611451551e3d15916bae723c3f59f7}{h}
+\item 
+\mbox{\Hypertarget{draw__circle_8cpp_ab66ed8e0098c0a86b458672a55a9cca9}\label{draw__circle_8cpp_ab66ed8e0098c0a86b458672a55a9cca9}} 
+int {\bfseries k}
+\item 
+int \hyperlink{draw__circle_8cpp_acab531abaa74a7e664e3986f2522b33a}{r}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Neetu
+\end{DoxyAuthor}
+D\+E\+S\+C\+R\+I\+P\+T\+I\+ON
+
+This file defines the mid-\/point circle drawing algorithm. It takes in the centre coordinates and the radius of the circle from the command line and draws the circle using opengl 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{draw__circle_8cpp_a48f7c4e548fbfcc8159af260fff4cc26}\label{draw__circle_8cpp_a48f7c4e548fbfcc8159af260fff4cc26}} 
+\index{draw\+\_\+circle.\+cpp@{draw\+\_\+circle.\+cpp}!draw\+\_\+circle@{draw\+\_\+circle}}
+\index{draw\+\_\+circle@{draw\+\_\+circle}!draw\+\_\+circle.\+cpp@{draw\+\_\+circle.\+cpp}}
+\subsubsection{\texorpdfstring{draw\+\_\+circle()}{draw\_circle()}}
+{\footnotesize\ttfamily void draw\+\_\+circle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+mid-\/point circle drawing algorithm 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+decision variable
+
+delta E
+
+delta SE
+
+Select East
+
+Select South-\/\+East
+
+plot the coordinates in all the octants based on symmetry \mbox{\Hypertarget{draw__circle_8cpp_a2858154e2009b0e6e616f313177762bc}\label{draw__circle_8cpp_a2858154e2009b0e6e616f313177762bc}} 
+\index{draw\+\_\+circle.\+cpp@{draw\+\_\+circle.\+cpp}!init@{init}}
+\index{init@{init}!draw\+\_\+circle.\+cpp@{draw\+\_\+circle.\+cpp}}
+\subsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void init (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+set display-\/window background color to white 
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{draw__circle_8cpp_a16611451551e3d15916bae723c3f59f7}\label{draw__circle_8cpp_a16611451551e3d15916bae723c3f59f7}} 
+\index{draw\+\_\+circle.\+cpp@{draw\+\_\+circle.\+cpp}!h@{h}}
+\index{h@{h}!draw\+\_\+circle.\+cpp@{draw\+\_\+circle.\+cpp}}
+\subsubsection{\texorpdfstring{h}{h}}
+{\footnotesize\ttfamily int h}
+
+center coordinates of circle ( x-\/coordinate \+: h , y-\/coordinate \+: k) \mbox{\Hypertarget{draw__circle_8cpp_acab531abaa74a7e664e3986f2522b33a}\label{draw__circle_8cpp_acab531abaa74a7e664e3986f2522b33a}} 
+\index{draw\+\_\+circle.\+cpp@{draw\+\_\+circle.\+cpp}!r@{r}}
+\index{r@{r}!draw\+\_\+circle.\+cpp@{draw\+\_\+circle.\+cpp}}
+\subsubsection{\texorpdfstring{r}{r}}
+{\footnotesize\ttfamily int r}
+
+radius of circle 
